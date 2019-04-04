@@ -1,0 +1,3 @@
+<input type="text" [(ngModel)]="searchTerm" />
+<button (click)="onSearch()">SUBMIT</button>
+<app-list-view *ngFor="let city of (cities | async)" [city]="city"></app-list-view>
